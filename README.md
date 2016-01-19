@@ -33,7 +33,9 @@ Build
 The repository directory should be in ROS workspace (e.g. ~/ros_ws/).
 Build lfd_vision with rosmake.
 
-  $ rosmake lfd_vision
+```
+$ rosmake lfd_vision
+```
 
 After rosmake, you will find some executables in bin/ directory.
 There are some build directories made by ROS.
@@ -43,7 +45,9 @@ Programs
 ==================
 Programs can be executed by "launch" files stored in launch/ directory.
 
-  $ roslaunch lfd_vision LAUNCH_FILE.launch
+```
+$ roslaunch lfd_vision LAUNCH_FILE.launch
+```
 
 ar_track_ext_xtion.launch:
 Just launches ar_track_alvar (AR marker tracker) which is a pose estimator of AR tags.
@@ -54,16 +58,18 @@ Flow detection, materials detection, and container detection with colors.
 bin/color_detector_node is executed.
 We use a (USB) RGB camera.
 
-  Right click: Pause/Resume
-  Space:  Pause/Resume
-  Shift+Left click: register the clicked color for the detector.
-  Shift+Right click: clear the registered colors.
-  s: save the registered colors into a file.
-  l: load colors from a file.
-  1,2: change the active color filter to 1 or 2.
-  0: change the active color filter to one for flow detection.
-  ], [: rotate the image.
-  m: change the display mode.
+```
+Right click: Pause/Resume
+Space:  Pause/Resume
+Shift+Left click: register the clicked color for the detector.
+Shift+Right click: clear the registered colors.
+s: save the registered colors into a file.
+l: load colors from a file.
+1,2: change the active color filter to 1 or 2.
+0: change the active color filter to one for flow detection.
+], [: rotate the image.
+m: change the display mode.
+```
 
 color_detector2.launch:
 Execute two bin/color_detector_node.
