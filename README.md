@@ -21,9 +21,14 @@ Some of programs use a PNG library LodePNG made by Lode Vandevenne (the files ar
 
 Requirements
 ==================
+Install following packages before building lfd_vision.
+
+Binaries are available (you can use **apt-get**):
 - ROS core system, rospy, roscpp, std_msgs, std_srvs, ...
 - OpenCV
 - PCL (Point Cloud Library)
+
+Need to build from source (these are using **Catkin**):
 - http://wiki.ros.org/ar_track_alvar
 - http://wiki.ros.org/ar_track_alvar_msgs
 
